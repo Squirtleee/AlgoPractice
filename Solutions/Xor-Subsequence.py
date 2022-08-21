@@ -1,6 +1,7 @@
 # Time Limit per Test: 2 seconds
 # Memory Limit per Test: 512 megabytes
 # Using: PyPy 3-64
+# Solution Link: https://codeforces.com/contest/1720/submission/169154692
 '''
 Question: https://codeforces.com/contest/1720/problem/D1
 
