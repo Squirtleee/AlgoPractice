@@ -3,7 +3,7 @@
 # Using: PyPy 3-64
 # Solution Link: https://codeforces.com/contest/1720/submission/169154692
 '''
-Question: https://codeforces.com/contest/1720/problem/D1
+Question Link: https://codeforces.com/contest/1720/problem/D1
 
 You are given an array of 𝑛 integers 𝑎0,𝑎1,𝑎2,…𝑎𝑛−1. Bryap wants to find the longest beautiful subsequence in the array.
 
