@@ -1,2 +1,5 @@
 # AlgoPractice
-Here are some algorithms implementaitons I tried and my solutions towards some Codeforces and Leetcode programming competitions' quesitons.
+<ul>
+<li>Algorithms implementation practice</li>
+<li>Solutions towards some Codeforces and Leetcode questions which I find to be particularly interesting or challenging.</li>
+</ul>
