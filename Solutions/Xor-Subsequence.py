@@ -1,7 +1,9 @@
 # Time Limit per Test: 2 seconds
 # Memory Limit per Test: 512 megabytes
 # Using: PyPy 3-64
-'''Question: https://codeforces.com/contest/1720/problem/D1
+'''
+Question: https://codeforces.com/contest/1720/problem/D1
+
 You are given an array of 𝑛 integers 𝑎0,𝑎1,𝑎2,…𝑎𝑛−1. Bryap wants to find the longest beautiful subsequence in the array.
 
 An array 𝑏=[𝑏0,𝑏1,…,𝑏𝑚−1], where 0≤𝑏0<𝑏1<…<𝑏𝑚−1<𝑛, is a subsequence of length 𝑚 of the array 𝑎.
