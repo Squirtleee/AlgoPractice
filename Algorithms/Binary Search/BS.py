@@ -39,7 +39,7 @@ Sample Output:
 1
 '''
 '''
-My Idea: Binary search for the minimum time. If at current time the workers can complete equal to or more than the required tasks, than set the upper boundary to current time. If at current time the workers can complete less than the required tasks, than set the upper boundary to current time +1.
+My Idea: Binary search for the minimum time. If at current time the workers can complete equal to or more than the required tasks, than set the upper boundary to current time. If at current time the workers can complete less than the required tasks, than set the lower boundary to current time +1.
 '''
 import sys
 input = sys.stdin.readline
