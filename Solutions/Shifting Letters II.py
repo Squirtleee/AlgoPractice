@@ -16,75 +16,30 @@ class Solution:
     def shiftingLetters(self, s: str, shifts: List[List[int]]) -> str:
         s=[p for p in s]
         change=[0]*len(s)
-        half=(len(s))//2
-        total=0
-        for k in shifts:
-            start=k[0]
-            end=k[1]
-            direction=k[2]
-            if end-start+1<half:
-                if direction==0:
-                    for y in range(start,end+1):
-                        change[y]-=1
-                        if change[y]<0:
-                            change[y]=(abs(change[y])%26)*-1
-                        else:
-                            change[y]=change[y]%26
-                else:
-                    for y in range(start,end+1):
-                        change[y]+=1
-                        if change[y]<0:
-                            change[y]=(abs(change[y])%26)*-1
-                        else:
-                            change[y]=change[y]%26
+        for sh in shifts:
+            start=sh[0]
+            end=sh[1]
+            direction=sh[2]
+            if direction==0:
+                change[start]-=1
+                if end+1<len(s):
+                    change[end+1]+=1
             else:
-                if direction==0:
-                    total-=1
-                    if total<0:
-                        total=(abs(total)%26)*-1
-                    else:
-                        total%=26
-                    for u in range(0,start):
-                        change[u]+=1
-                        if change[u]<0:
-                            change[u]=(abs(change[u])%26)*-1
-                        else:
-                            change[u]=change[u]%26
-                    for p in range(end+1,len(s)):
-                        change[p]+=1
-                        if change[p]<0:
-                            change[p]=(abs(change[p])%26)*-1
-                        else:
-                            change[p]=change[p]%26
-                else:
-                    total+=1
-                    if total<0:
-                        total=(abs(total)%26)*-1
-                    else:
-                        total%=26
-                    for u in range(0,start):
-                        change[u]-=1
-                        if change[u]<0:
-                            change[u]=(abs(change[u])%26)*-1
-                        else:
-                            change[u]=change[u]%26
-                    for p in range(end+1,len(s)):
-                        change[p]-=1
-                        if change[p]<0:
-                            change[p]=(abs(change[p])%26)*-1
-                        else:
-                            change[p]=change[p]%26
+                change[start]+=1
+                if end+1<len(s):
+                    change[end+1]-=1
+        plus=0
         for l in range(len(s)):
-            change[l]+=total
-            if change[l]<0:
-                change[l]=(abs(change[l])%26)*-1
-            else:
-                change[l]=change[l]%26
             num=ord(s[l])
-            num+=change[l]
+            plus+=change[l]
+            if plus<0:
+                plus=(abs(plus)%26)*-1
+            else:
+                plus%=26
+            num+=plus
             if num<97:
                 num+=26
             elif num>122:
                 num-=26
             s[l]=chr(num)
-        return (''.join(s))
+        return ''.join(s)
