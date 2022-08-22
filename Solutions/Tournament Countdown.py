@@ -11,7 +11,7 @@ There was a tournament consisting of 2𝑛 contestants. The 1-st contestant comp
 
 You don't know the results, but you want to find the winner of the tournament. In one query, you select two integers 𝑎 and 𝑏, which are the indices of two contestants. The jury will return 1 if 𝑎 won more matches than 𝑏, 2 if 𝑏 won more matches than 𝑎, or 0 if their number of wins was equal.
 
-Find the winner in no more than ⌈13⋅2𝑛+1⌉ queries. Here ⌈𝑥⌉ denotes the value of 𝑥 rounded up to the nearest integer.
+Find the winner in no more than ⌈1/3⋅2^(n+1)⌉ queries. Here ⌈𝑥⌉ denotes the value of 𝑥 rounded up to the nearest integer.
 
 Note that the tournament is long over, meaning that the results are fixed and do not depend on your queries.
 
