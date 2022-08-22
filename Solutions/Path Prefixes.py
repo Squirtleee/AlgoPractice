@@ -4,7 +4,7 @@
 # Solution Link: https://codeforces.com/contest/1714/submission/166687858
 '''
 Question Link: https://codeforces.com/contest/1714/problem/G 
-(!! Super recommend looking clicking on the link cuz the graphs made the problem much easier to understand !!)
+(!! Super recommend clicking on the link cuz the graphs made the problem much easier to understand !!)
 
 You are given a rooted tree. It contains 𝑛 vertices, which are numbered from 1 to 𝑛. The root is the vertex 1.
 
